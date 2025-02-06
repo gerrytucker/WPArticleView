@@ -30,7 +30,7 @@ public struct WPArticleView<Content: View>: View {
         self.content = list(blocks)
     }
 
-    @available(macOS 12, iOS 15, *)
+    @available(macOS 12, iOS 15, tvOS 15, *)
     public init?<T, I, V>(
         htmlBody: String,
         @ViewBuilder list: @escaping ([AnyView]) -> Content,

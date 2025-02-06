@@ -16,7 +16,7 @@ struct ParagraphView<Content: View>: View {
         self.content = text(attributedText)
     }
 
-    @available(macOS 12, iOS 15, *)
+    @available(macOS 12, iOS 15, tvOS 15, *)
     init?(_ element: Element, @ViewBuilder attributedText: @escaping (AttributedString) -> Content) {
         guard element.tagName() == "p" else {
             return nil
