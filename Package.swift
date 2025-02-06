@@ -6,7 +6,8 @@ let package = Package(
     name: "WPArticleView",
     platforms: [
         .macOS(.v10_15),
-        .iOS(.v13)
+        .iOS(.v13),
+        .tvOS(.v15)
     ],
     products: [
         .library(name: "WPArticleView", targets: ["WPArticleView"]),
